@@ -11,6 +11,7 @@ import java.util.List;
 
 @Service
 public class CarServiceImpl implements CarService {
+
     @Autowired
     private CarDao carDao;
 
@@ -28,7 +29,7 @@ public class CarServiceImpl implements CarService {
 
     @Transactional
     @Override
-    public List<User> getCar(String madel, int series) {
-        return carDao.getCar(madel, series);
+    public User getCarByModelAndSeries(String madel, int series) {
+        return carDao.getCarByModelAndSeries(madel, series);
     }
 }

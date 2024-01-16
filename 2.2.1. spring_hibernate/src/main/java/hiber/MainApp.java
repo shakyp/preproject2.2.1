@@ -51,7 +51,7 @@ public class MainApp {
         }
 
 //        Получение юзера, владеющего машиной по ее модели и серии.
-        System.out.println(carService.getCar("Car6", 6));
+        System.out.println(carService.getCarByModelAndSeries("Car6", 6));
 
         context.close();
     }

@@ -13,5 +13,5 @@ public interface CarService {
     List<Car> listCars();
 
     @Transactional
-    List<User> getCar(String madel, int series);
+    User getCarByModelAndSeries(String madel, int series);
 }
